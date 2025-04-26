@@ -1,4 +1,6 @@
 package part2;
 
-public class TowerMediator {
+public interface TowerMediator {
+    void broadcast(String msg, Aircraft sender);
+    boolean requestRunway(Aircraft a);
 }
